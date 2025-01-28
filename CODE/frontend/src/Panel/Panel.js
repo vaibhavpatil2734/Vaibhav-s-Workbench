@@ -23,12 +23,13 @@ const InfoPanel = () => {
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const images = [
-    "https://imgs.search.brave.com/bT9XBpvB4E7X2hwgEoBO67lmULlMM6Z4z65MO17Lx7c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEucG9wc3VnYXIt/YXNzZXRzLmNvbS9m/aWxlcy90aHVtYm9y/Lzl3MTdHVzRwR0tr/ajJGZmdjbGVpMEFR/V05EOD0vZml0LWlu/Lzc5Mng1MjgvdG9w/L2ZpbHRlcnM6Zm9y/bWF0X2F1dG8oKTp1/cHNjYWxlKCkvMjAy/MC8wNi8yNS8wMzAv/bi8xOTIyMjgzL2Rj/OTEwZTc2OGUzNmE0/MWVfREFSS18xMDVf/VW5pdF8wMjI4NVIu/anBn",
-    "https://imgs.search.brave.com/4fizkDMUrNnJsYCuiW00XZqt1Fi9AhKAVlvYV8Mn8pY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lMC5w/eHhmdWVsLmNvbS93/YWxscGFwZXJzLzg5/My80NzMvZGVza3Rv/cC13YWxscGFwZXIt/ZGFyay1tYXJ0aGEt/bmllbHNlbi10aHVi/bmFpbC5qcGc",
-    "https://imgs.search.brave.com/vht5PK-IgpL8ygqQf02LeN1HgP2DTAByzR1O_YnDcZM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lMS5w/eHhmdWVsLmNvbS9k/ZXNrdG9wLXdhbGxw/YXBlci82NzUvNzE3/L2Rlc2t0b3Atd2Fs/bHBhcGVyLWRhcmst/dHYtc2hvdy1jaGFy/YWN0ZXItbGlzdC1k/YXJrLW5ldGZsaXgt/dGh1bWJuYWlsLmpwZw",
-    // Add more image URLs as needed
-  ];
+ const images = [
+  "./A2rtboard.png",
+  "./onehere.jpg",
+  "./Artb12oard 1.png"
+  // Add more image URLs as needed
+];
+
 
   const [currentImage, setCurrentImage] = useState(0);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -44,7 +45,7 @@ const InfoPanel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 3000); // Change every 3 seconds
+    }, 7000); // Change every 3 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
