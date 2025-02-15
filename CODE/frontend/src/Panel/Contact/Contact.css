@@ -1,0 +1,142 @@
+/* Background & Layout */
+.contact-container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    border-radius: 10px;
+    overflow: hidden;
+    align-content: center;
+  }
+  
+  /* Glassmorphism Card */
+  .form-card {
+    background: rgba(255, 255, 255, 0.1);
+    margin-left: 15%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 400px;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+    
+    
+  }
+  .message-box {
+    resize: vertical;
+    min-height: 50px;  /* Approx. 3 rows */
+    max-height: 150px; /* Approx. 6 rows */
+    overflow-y: auto; /* Enables scrollbar when max height is reached */
+  }
+  
+  
+  /* Title & Subtitle */
+  .contact-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  /* Input Fields */
+  .form-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border: 2px solid #00aaff;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00aaff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background: #0088cc;
+  }
+  
+  /* Status Messages */
+  .status-message, .success-message, .error-message {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: #4caf50;
+  }
+  
+  .error-message {
+    color: #ff3d3d;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #00aaff;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Navbar = () => {
+const Navbar = (setactiveSection) => {
   // Function to handle smooth scrolling to a section
   const onScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -31,19 +31,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={() => onScrollToSection("home")}>Home</a>
+              <a className="nav-link" href="#home" >Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#gallery" onClick={() => onScrollToSection("gallery")}>Gallery</a>
+              <a className="nav-link" href="#gallery" >Gallery</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#projects" onClick={() => onScrollToSection("projects")}>Projects</a>
+              <a className="nav-link" href="#projects" >Projects</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#resume" onClick={() => onScrollToSection("resume")}>Resume</a>
+              <a className="nav-link" href="#resume" >Resume</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={() => onScrollToSection("contact")}>Contact</a>
+              <a className="nav-link" href="#contact" >Contact</a>
             </li>
           </ul>
         </div>
