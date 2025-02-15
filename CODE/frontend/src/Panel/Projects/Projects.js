@@ -3,9 +3,9 @@ import './Projects.css';
 
 export default function Projects() {
   const projects = [
-    { title: "Project 1", image: "./project1.jpg", link: "https://project1.com" },
-    { title: "Project 2", image: "./project2.jpg", link: "https://project2.com" },
-    { title: "Project 3", image: "./project3.jpg", link: "https://project3.com" },
+    { title: "project-management-tool", image: "./project11.png", link: "https://project-management-tool2734.netlify.app" },
+    { title: "wellnessnest", image: "./project22.png", link: "https://wellnessnest.netlify.app/" },
+    { title: "linkvault", image: "./project3.png", link: "https://linkvault1.netlify.app" },
     { title: "Project 4", image: "./project4.jpg", link: "https://project4.com" },
   ];
 

@@ -6,6 +6,7 @@
     height: 90%;
     background-color: #1a1a2e;
     padding: 5%;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     overflow: hidden;  /* Prevent images from going outside */
 }
